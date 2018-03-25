@@ -3,9 +3,16 @@
 # prick
 This is an experimental slack bot for Prickathon channel.
 
+# Required
+python3.6+
 
 # Setup
 You must store your api token to `.env`.
+Next, you pip.
+
+```python
+pip install -r requirements.txt
+```
 All you need is done ✨
 
 
