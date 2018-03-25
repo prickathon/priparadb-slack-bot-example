@@ -1,3 +1,6 @@
-from . import live_info
+from . import live
 
-of = {'live-info': live_info.handler}
+
+of = {
+    'live': live.handler,
+}
