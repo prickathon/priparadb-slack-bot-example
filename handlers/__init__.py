@@ -1,6 +1,6 @@
-from . import live
+from . import live_who
 
 
 of = {
-    'live': live.handler,
+    'live-who': live_who.handler,
 }

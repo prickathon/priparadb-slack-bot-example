@@ -3,7 +3,7 @@ import json
 from clients.live import Live
 
 
-def handler(arg):
+def handler(*arg):
     lives = Live()
     lives.get_all()
     text = '\n'.join(map(as_text, lives.data))

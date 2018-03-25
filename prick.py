@@ -9,7 +9,7 @@ import handlers
 
 def cmd_parser(text):
     # FIXME: so tired
-    parsed = re.match(r'^(live|team)\s+(.+)?$', text)
+    parsed = re.match(r'^(live-who)\s+(.+)?$', text)
     if not parsed:
         return None, None
 
@@ -34,8 +34,9 @@ if client.rtm_connect():
         if not cmd:
             continue
         handler = handlers.of.get(cmd)
+        import pdb; pdb.set_trace();
         if not handler:
             continue
-        client.rtm_send_message(msg[0]['channel'], handler(args))
+        client.rtm_send_message(msg[0]['channel'], handler(*args))
 else:
     print('Connection failed')
