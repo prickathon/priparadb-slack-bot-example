@@ -1,0 +1,1 @@
+URL = 'https://prickathon.github.io/webapi-mock-up/main.json'
